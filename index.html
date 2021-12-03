@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!--Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <!---------------->
+    <!-----Iconos*---->
+    <link rel="stylesheet" href="iconos.css" type="text/css">
+    <!---------------->
+    <title>Simply Neon</title>
+</head>
+<body onresize="dimension()" onload="dimension()">
+    <header>
+        <!--<span class="icon-menu"></span>-->
+        <div id="" class="h-cont1">
+            <div class="cont1-d1">
+                <img src="img/svg/square-24854.svg">
+            </div>
+            <div class="cont1-d2">
+                <h1>Simply Neon</h1>
+            </div>
+            <nav id="btn_responsive">
+                <a onclick="hamburguesa()"><span class="icon-menu"></span></a>
+            </nav>
+        </div>
+        <nav class="links">
+            <div id="cont-links">
+                <ul id="h-links">
+                    <li class="links-l1"><a href="#s1">Inicio</a></li>
+                    <li class="links-l2"><a href="#s2">Local</a></li>
+                    <li class="links-l3"><a href="#s3">Diseños</a></li>
+                    <li class="links-l4"><a href="#section_new2">Tienda</a></li>
+                    <li class="links-l5"><a href="#section_new">Opiniones</a></li>
+                    <li class="links-l6"><a href="#s4">Contactos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="s1">
+        <div class="s1-d1">
+            <div class="d1-d">
+                <h2 class="inicio-text">Te gusta el Neon? Aqui encontraras los mejores diseños.
+                    Registrate para Recibir Ofertas
+                </h2>
+            </div>
+            <div class="button">
+                <button type="button" class="button-btn btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Registrar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="s2">
+        <div class="s2-d1">
+            <div>
+                <p class="text-local">Vení a visitarnos a nuestro local y 
+                  encontrá el diseño que más te guste personalmente. <br>
+                    <span>Av. liberti 1564</span>
+                </p>   
+            </div>
+          </div>
+    </section>
+    <section id="s3">
+        <div class="div-s3">
+            <h2 class="text-diseños">Diseños Populares</h2>
+        </div>
+        <div id="s3-cont1" class="div-s3 s3-div">
+            <div id="s3-d1" class="s3-d s3-d1" onmousemove="aparicion('s3-d1','text1')" onmouseout="desaparicion('s3-d1','text1', 'pexels-ariel-paredes-2242452.jpg')">
+                <div id="text1">
+                    <h4>Nombre: Beauty</h4>
+                    <p>Fecha: 21-10-2021</p>
+                    <p>Colores: rojo y azul</p>
+                    <p>Precio: $5000</p>
+                    <p>Description: Diseño ideal para tu bar o tu
+                        lugar de encuentros.
+                    </p>
+                </div>
+            </div>
+            <div id="s3-d2" class="s3-d s3-d2" onmousemove="aparicion('s3-d2','text2')" onmouseout="desaparicion('s3-d2','text2','pexels-julyo-saenz-3637215.jpg')">
+                <div id="text2">
+                    <h4>Nombre: Fuck</h4>
+                    <p>Fecha: 11-09-2020</p>
+                    <p>Colores: Verde y Negro</p>
+                    <p>Precio: $7000</p>
+                    <p>Description: Diseño Urbano ideal para tu lugar de encuentro.
+                    </p>
+                </div>
+            </div>
+            <div id="s3-d3" class="s3-d s3-d3" onmousemove="aparicion('s3-d3','text3')" onmouseout="desaparicion('s3-d3','text3','pexels-vincent-rivaud-2333859.jpg')">
+                <div id="text3">
+                    <h4>Nombre: Palmera</h4>
+                    <p>Fecha: 5-05-2018</p>
+                    <p>Colores: Celeste y Red</p>
+                    <p>Precio: $3000</p>
+                    <p>Description: Diseño ideal para tus fiestas con amigos
+                    </p>
+                </div>
+            </div>
+            <div id="s3-d4" class="s3-d s3-d4" onmousemove="aparicion('s3-d4','text4')" onmouseout="desaparicion('s3-d4','text4','pexels-daniele-assenza-1268530.jpg')">
+                <div id="text4">
+                    <h4>Nombre: Friends</h4>
+                    <p>Fecha: 11-09-2020</p>
+                    <p>Colores: Fucsia</p>
+                    <p>Precio: $8000</p>
+                    <p>Description: Diseño ideal para tu restaurante
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sections Bootstrap -->
+    <section id="section_new2" class="section-bootstrap">
+        <div id="container-2" class="container-fluid">
+            <div class="op-tit">
+                <h2>
+                  Tienda
+                </h2>
+            </div>
+            <div class="row c-op">
+                <div class="col-xxl-12 cont-tarj">
+                  <div class="card text-dark mb-3 card1" style="max-width: 500px;">
+                    <div class="row g-0">
+                      <div class="col-md-4 img-dis">
+                        <img src="img/coffee-5950561_640.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Comercio</h5>
+                          <p class="card-text">Necesitas un diseño para tu comercio? 
+                            Contactanos, y en la brevedad estaremos brindandote nuestros diseños para que eligas el que mas te guste.</p>
+                            <a class="card-text btn-cont btn btn-sm"><small class="text-muted">Contactar -></small></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-12 cont-tarj">
+                  <div class="card text-dark bg-warning mb-3 card2" style="max-width: 500px;">
+                    <div class="row g-0">
+                      <div class="col-md-4 img-dis">
+                        <img src="img/halloween-5542804_640.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Diseño</h5>
+                          <p class="card-text">Necesitas un diseño minimalista para decorar tu casa? Contactanos, y en la brevedad estaremos 
+                            brindandote nuestros diseños para que eligas el que mas te guste.</p>
+                          <a class="card-text btn-cont btn-cont2 btn btn-sm"><small class="text-muted">Contactar -></small></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-12 cont-tarj">
+                  <div class="card text-dark mb-3 card3" style="max-width: 500px;">
+                    <div class="row g-0">
+                      <div class="col-md-4 img-dis cont-img">
+                        <img src="img/woman-3148488_640.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Decoracion</h5>
+                          <p class="card-text">Vas a hacer una fiesta y necesitas que la decoremos? 
+                            Contactanos, y te brindaremos nuestras cotizaciones para fiestas.</p>
+                            <a class="card-text btn-cont btn-cont3 btn btn-sm"><small class="text-muted">Contactar -></small></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <video autoplay loop muted class="fond-video">
+          <source src="img/video/fond.mp4" type="video/mp4">
+        </video>
+        <div class="capa"></div>
+    </section>
+    <section id="section_new" class="section-bootstrap">
+      <div id="container-1" class="container-fluid">
+          <div class="c-car">
+            <div class="cont-principal text-center text-white">
+                <h2 class="text-opi">Opiniones</h2>
+            </div>
+            <div class="cont-op">
+                <div class="row cont-foto-opi">
+                  <div class="col-md-6">
+                    <div class="foto">
+                      <video autoplay loop muted class="cara1" id="video1">
+                        <source src="img/video/cara1.mp4" type="video/mp4">
+                      </video>
+                      <div class="capa new-capa"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="opinion">
+                      <div class="tit">
+                        <h3>Jessica</h3>
+                      </div>
+                      <div class="text">
+                        Encantada de comprar sus diseños son maravillosos, volveria a comparar
+                        sin dudarlo.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row cont-foto-opi">
+                  <div class="col-md-6">
+                    <div class="foto foto2">
+                      <video autoplay loop muted class="cara1" id="video2">
+                        <source src="img/video/cara2.mp4" type="video/mp4">
+                      </video>
+                      <div class="capa new-capa"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="opinion">
+                      <div class="tit">
+                        <h3>Jazmin</h3>
+                      </div>
+                      <div class="text">
+                        <p>
+                          Estaba buscando algunos diseños para decorar mi casa, y por suerte encontre
+                          lo que buscaba, la atencion de maravilla.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row cont-foto-opi">
+                  <div class="col-md-6">
+                    <div class="foto foto3">
+                      <video autoplay loop muted class="cara1" id="video3">
+                        <source src="img/video/cara4.mp4" type="video/mp4">
+                      </video>
+                      <div class="capa new-capa"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="opinion">
+                      <div class="tit">
+                        <h3>Chris</h3>
+                      </div>
+                      <div class="text">
+                          Fui a buscar algunos diseños para una fiesta y por suerte me atendieron
+                          a la brevedad, me fui encantado con las compras que realize.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+  </section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content mi-modal">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body cont-form">
+                <form class="row g-3 needs-validation m-form" novalidate>
+                  <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="invalid-feedback">
+                      Por favor ingresa tu nombre.
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    <div class="invalid-feedback">
+                      Por favor ingresa tu apellido.
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                      <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                          Por favor ingresa tu Email.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Localidad</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                      Por favor ingresa una localidad
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Provincias</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">Selecciona tu provincia</option>
+                      <option>Buenos Aires</option>
+                      <option>Córdoba</option>
+                      <option>Entre Ríos</option>
+                      <option>Santa Fe</option>
+                      <option>Salta</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Por favor selecciona una provincia
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Codigo postal</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Por favor Ingresa Codigo Postal
+                    </div>
+                  </div>
+                  <div class="col-12 cont-reg">
+                    <button class="btn btn-outline-info btn-registrar" type="submit">Registrar</button>
+                  </div>
+                </form>
+                <video autoplay loop muted>
+                  <source src="img/video/guitarra.mp4" type="video/mp4">
+                </video>
+                <div class="capa"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----- -->    
+    <!-- -------------------- -->
+    <section id="s4">
+        <div class="s4-div1">
+            <p>Necesitas un diseño Personalizado?
+                Contactanos por cualquiera de estas medios y
+                juntos hagamos realidad tus ideas
+            </p>
+        </div>
+        <div class="s4-div2">
+            <div class="f-cont">
+                <div class="icon1">
+                    <a href="http://" target="_blank"><img src="img/svg/facebook-svgrepo-com.svg" width="30"></a>
+                </div>
+                <div class="icon2">
+                    <a href="http://" target="_blank"><img src="img/svg/instagram-social-network-logo-of-photo-camera-svgrepo-com.svg" width="28"></a>
+                </div>
+                <div class="icon3">
+                    <a href="http://" target="_blank"><img src="img/svg/linkedin-svgrepo-com.svg" width="30"></a>
+                </div>
+                <div class="icon4">
+                    <a href="http://" target="_blank"><img src="img/svg/gmail-svgrepo-com.svg" width="30"></a>
+                </div>
+                <div class="icon5">
+                    <a href="http://" target="_blank"><img src="img/svg/whatsapp-fill-svgrepo-com.svg" width="30"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>Contactos:</p>
+            <p>0800-444</p>
+        </div>
+        <div>
+            <p>Ubicacion:</p>
+            <p>Avenida liberti 1564</p>
+        </div>
+        <div>
+            <p>Horarios:</p>
+            <p>Lun a viernes 08:00 a 17:00</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+      
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+      
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
+    </script>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
